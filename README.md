@@ -1,8 +1,5 @@
 # PMPlus
 
-El diseño, creación y maquetación de la página fue realizado y desarrollado por mi persona orientado a brindarle al usuario una 
-experiencia satisfactoria.
-
 La finalidad de este proyecto nació con el objetivo de mejorar la calidad de vida de las personas, mediante la tecnología y al estudio 
 socio-económico de la región.
 
