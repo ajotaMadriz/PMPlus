@@ -1,0 +1,86 @@
+.sidebar{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -250px;
+    background: #262626c4;
+    width: 250px;
+    height: 100%;
+    transition: .3s
+}
+.sidebar.active{
+    right: 0;
+}
+ul{
+    margin: 0;
+    padding: 20px 0;
+}
+ul li{
+    list-style: none;
+}
+.sidebar ul li a{
+    padding: 15px 20px;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+}
+.sidebarBtn{
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: #262626;
+    border: none;
+    outline: none;
+    border-bottom-left-radius: 5px;
+}
+.sidebarBtn:hover{
+    background: #00c57f;
+    color: #fff;
+    transition: .5s;
+}
+.sidebarBtn span{
+    display: block;
+    width: 35px;
+    height: 3px;
+    background: #f5f5f5;
+    position: absolute;
+    top: 24px;
+    transition: .3s;
+}
+.sidebarBtn span:before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #f5f5f5;
+    transition: .3s;
+}
+.sidebarBtn span:after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #f5f5f5;
+    transition: .3s;
+}
+.sidebarBtn.toggle span{
+    background: transparent;
+}
+.sidebarBtn.toggle span:before{
+    top: 0;
+    transform: rotate(45deg);
+}
+.sidebarBtn.toggle span:after{
+    top: 0;
+    transform: rotate(-45deg);
+}

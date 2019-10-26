@@ -1,0 +1,55 @@
+#contact{
+    background: url(../img/FONDODEHERRAMIENTAS.png) no-repeat center;
+    background-size: cover;
+}
+.contact-section h2{
+    text-align: center;
+    color: #ddd;
+    font-size: 42px;
+}
+.border{
+    width: 100px;
+    height: 6px;
+    background: #00c57f ;
+    margin: 40px auto;
+    margin-top: -20px
+}
+.contact-section .contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.contact-section .contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px auto;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background: rgba(17, 17, 17, 0.075);
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: .5s
+}
+.contact-section .contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #34495e;
+}
+.contact-section textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+}
+.contact-section .contact-form-btn{
+    float: right;
+    border: 0;
+    background: #00c57f;
+    color: #ddd;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s
+}
+.contact-section .contact-form-btn:hover{
+    background: #2980b9;
+}

@@ -1,0 +1,328 @@
+@import url(fontello.css);
+@import url(menu.css);
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway');
+@import url(aos.css);
+@import url(contact.css);
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.banner{
+    background: linear-gradient(125deg, #1abc9c, #3498db, #16a085,#2980b9, #0984e3);
+    background-size: 300%; 
+    padding: 100px 0 0px 0;
+    transform: skew(0deg, -5deg) translateY(-120px);
+    overflow: hidden;
+}
+.banner h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 44px;
+    color: #fff;
+}
+@media (max-width:768px){
+    .banner h1{
+        font-size: 30px;
+    }
+}
+.banner p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff
+}
+.banner .btn-ico{
+    position: relative;
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 3em;
+    background: #00c57f;
+    color: #fff;
+    text-decoration: none;
+    transition: .5s
+}
+.banner .btn-ico:hover{
+    background: #2980b9;
+}
+.indicador{
+    position: absolute;
+    top: 90%;
+    left:48%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: rgba(204, 204, 204, 0);
+    transform: rotate(45deg);
+}
+.indicador span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+    border: none;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    animation: animate 1s linear infinite;
+}
+.indicador span:nth-child(1){
+    top: -10px;
+    left: -10px;
+    animation-delay: 0s;
+}
+.indicador span:nth-child(2){
+    top: -5px;
+    left: -5px;
+    animation-delay: 0.2s;
+}
+.indicador span:nth-child(3){
+    top: 0px;
+    left: 0px;
+    animation-delay: 0.4s;
+}
+@keyframes animate{
+    0%{
+        border-color: #fff;
+        transform: translate(0,0)
+    }
+    20%{
+        border-color: #fff;
+        transform: translate(10px,10px)
+    }
+    20.1%, 100%{
+        border-color: #222;
+    }
+}
+.container{
+    padding: 150px 10%;
+    transform: skew(0deg, 5deg);
+    overflow: hidden;
+}
+.sec2{
+    padding: 0 10% 50px;
+    overflow: hidden;
+}
+.sec3{
+    background: #5fbfff ;
+    transform: skew(0deg, 5deg);
+    padding: 0 10% 50px;
+    overflow: hidden;
+}
+.container2{
+    padding: 150px 0;
+    transform: skew(0deg, -5deg);
+}
+.sec4{
+    background: #fff ;
+    transform: skew(0deg, -5deg);
+    margin-top: -150px; 
+    padding: 0 0 50px;
+    overflow: hidden;
+}
+#team{
+    background: #fff ;
+    transform: skew(0deg, -5deg);
+    margin-top: -150px; 
+    padding: -100px 0;
+    overflow: hidden;
+}
+#roadmap{
+    box-sizing: border-box;
+}
+.pri-container-roadmap{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 5px;
+}
+.pri-container-roadmap .contenido-roadmap{
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+}
+#whitepaper{
+    position: relative;
+    background: url(../img/FONDOREGISTRO.png) ;
+    background-position: center;
+    background-size: cover;
+    color: rgb(214, 214, 214);
+}
+.color-fondo{
+    background: #3498db;
+    opacity: .6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    clear: both;
+}
+.box-team{
+    position: relative;
+    top: -60px;
+    box-sizing: border-box;
+}
+.text-team{
+    color: rgb(214, 214, 214);
+}
+.img-team1{
+    width: 250px;
+    height: 250px;
+    background: url(../img/dev-1.jpg);
+    background-size: 250px 250px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 50px 
+}
+.img-team2{
+    width: 250px;
+    height: 250px;
+    background: url(../img/dev-2.jpg);
+    background-size: 250px 250px;
+    border-radius: 50%;
+    float: right;
+    margin-left: 50px 
+}
+.img-team3{
+    width: 250px;
+    height: 250px;
+    background: url(../img/dev-3.jpg);
+    background-size: 250px 250px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 50px 
+}
+@media (max-width: 768px){
+    .text-team{
+        clear: both;
+        width: 100%;
+        padding-top: 25px
+    }
+}
+.box-team .text-team ul{
+    position: relative;
+    margin: 10px;
+    padding: 0;
+    display: table;
+    z-index: 1;
+}
+.box-team .text-team ul li{
+    list-style: none;
+    margin: 0 5px;
+    float: left;
+}
+.box-team .text-team ul li a{
+    display: block;
+    background: #262626;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    transition: .5s;
+    border-radius: 50%;
+}
+.box-team .text-team ul li .face:hover{
+    background: #3b5998
+}
+.box-team .text-team ul li .tweet:hover{
+    background: #007bb6;
+}
+.box-team .text-team ul li .in:hover{
+    background: #006391;
+}
+.box-team .text-team ul li .imsta:hover{
+    background: #b71540;
+}
+.footer ul{
+    position: relative;
+    margin: 30px auto 0;
+    padding: 0;
+    display: table;
+    z-index: 1;
+    clear: both;
+}
+.footer ul li{
+    list-style: none;
+    margin: 0 5px;
+    float: left;
+}
+.footer ul li a{
+    display: block;
+    background: #262626;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    transition: .5s;
+    border-radius: 50%;
+}
+.footer ul li .face:hover{
+    background: #3b5998
+}
+.footer ul li .tweet:hover{
+    background: #007bb6;
+}
+.footer ul li .git:hover{
+    background: #3b3b3b;
+}
+.footer ul li .imsta:hover{
+    background: #b71540;
+}
+.boton-top{
+    position: fixed;
+    bottom: 80px;
+    right: 50px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background: #262626;
+    color: #fff;
+    transition: .5s;
+    z-index: 1;
+    border-radius: 5px;
+}
+.boton-top:hover{
+    background: #00c57f;
+    color: #fff;
+    transition: .5s;
+
+}
+.footer{
+    position: relative;
+    background: linear-gradient(125deg, #0b6099c4, #11725fc4);
+    transform: skew(0deg, 5deg) translateY(120px);
+    padding: 0 10% 0px;
+    overflow: hidden;
+    margin-top: -250px;
+    margin-bottom: -250px; 
+}
+.footer p{
+    position: relative; 
+    top: -50px; 
+    font-size: 20px; 
+    color: #fff
+}
+@media (max-width:768px){
+    .footer p{
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+}
